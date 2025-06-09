@@ -34,7 +34,7 @@ COPY --from=build /app/target/conta-service-0.0.1-SNAPSHOT.jar ./app.jar
 
 # Expõe a porta 8080 (ou a porta que seu serviço usa internamente).
 # O Railway irá mapear uma porta pública para esta porta interna.
-EXPOSE 8080
+EXPOSE 8083
 
 # Comando que será executado quando o contêiner iniciar.
 # Inicia a aplicação Java.
