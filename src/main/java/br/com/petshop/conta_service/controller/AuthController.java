@@ -29,7 +29,7 @@ public class AuthController {
     private PasswordEncoder passwordEncoder;
 
     // A chave secreta para assinar o token. Coloque isso no seu application.properties
-    @Value("${jwt.secret}")
+    @Value("${jwt.secret:VALOR_PADRAO_PARA_DEBUG}")
     private String jwtSecret;
     
     // Tempo de expiração do token (ex: 24 horas)
